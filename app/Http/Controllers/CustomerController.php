@@ -7,11 +7,13 @@ use App\Customer;
 use App\Order;
 use Illuminate\Support\Facades\DB;
 
+
 class CustomerController extends Controller
 {
     public function index()
     {
-        return view('Customers.showCustomers')->with('Customers',Customer::paginate(10));
+        return view('Customers.showCustomers')->with('Customers',
+               Customer::paginate(5));
     }
 
     public function Debug()

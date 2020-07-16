@@ -24,7 +24,7 @@
 	</style>
 </head>
 <body>
-<div class="row mb-2">	
+<div class="row mb-2">
 	<table>
 			<tr>
 				<th> <h1>customerName</h1> </th>
@@ -41,7 +41,7 @@
 			</tr>
 			@endforeach
 	</table>
-	{{ $Customers->appends(request()->input())->links() }}
+	{{ $Customers->links() }}
 </div>
 </body>
 </html>
